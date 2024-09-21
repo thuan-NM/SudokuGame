@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+input {
+  font-family: "Press Start 2P", system-ui !important;
+  font-weight: 300;
+  font-size: 18px !important;
+}
+
+button {
+  font-family: "Press Start 2P", system-ui !important;
+  font-size: 13px !important;
+}
+
+.timing {
+  font-family: "Press Start 2P", system-ui !important;
+  font-size: 16px !important;
+}
+
+.App {
+  text-align: center;
+  background-image: url("../public/z5363975988120_0900d0dcd0b6f9cdae078fed8d365a50.jpg");
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sudoku-board .ant-row {
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  text-align: center;
+  margin: auto !important;
+  width: 50%;
+}
+
+.sudoku-board .ant-col input {
+  text-align: center;
+  border-radius: 0px !important;
+  height: 75px !important;
+  font-size: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.sudoku-board {
+  padding-bottom: 50px;
+  position: relative !important;
+  z-index: 100 !important;
+}
+
+.menu-bar {
+  position: relative !important;
+  z-index: 100 !important;
+}
+
+.sudoku-input-form {
+  position: relative !important;
+  z-index: 100 !important;
+}
+
+.App {
+  background-color: #b0afaf;
+}
+
+.sudoku-board .ant-col input.readonly {
+  font-weight: 800 !important;
+  background-color: #FDFF04 !important;
+}
+
+/* 
+.sudoku-board .ant-col input.square {
+  background-color: #FDFF04;
+} */
+
+.sudoku-board .ant-col input.topline {
+  border-top: 2px solid black;
+}
+
+.sudoku-board .ant-col input.botline {
+  border-bottom: 2px solid black;
+}
+
+.sudoku-board .ant-col input.leftline {
+  border-left: 2px solid black;
+}
+
+.sudoku-board .ant-col input.rightline {
+  border-right: 2px solid black;
+}
+
+.sudoku-board .ant-col input.suggest {
+  font-weight: 700;
+  background-color: rgba(172, 251, 172);
+}
+
+.sudoku-board .ant-col input.error {
+  background-color: red;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.new-game-button {
+  margin-left: 10px;
+  background-color: #FDFF04;
+  margin-bottom: 25px;
+  color: black;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.new-game-button {
+  margin-left: 10px;
+  background-color: #FDFF04;
+  margin-bottom: 25px;
+  color: black;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.new-game-button svg {
+  font-family: "Press Start 2P", system-ui !important;
+  font-size: 18px !important;
+}
+
+.new-game-button:hover {
+  background-color: #fff !important;
+  margin-bottom: 25px;
+  color: black !important;
+  font-weight: 600;
+  transform: scale(1.05);
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.ant-modal-content {
+  background-color: #eedede !important;
+}
+
+.ant-modal-content>div {
+  background-color: #eedede !important;
+}
+
+.ant-modal-content .ant-modal-footer .ant-btn-primary {
+  background-color: black;
+  font-weight: 600 !important;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.ant-modal-content .ant-modal-footer .ant-btn-primary:hover {
+  background-color: forestgreen !important;
+  color: black !important;
+  font-weight: 600 !important;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  transform: scale(1.05);
+}
+
+.ant-modal-content .ant-modal-footer .ant-btn-default {
+  font-weight: 600 !important;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.ant-btn-default:hover {
+  border: rgb(250, 48, 48) solid 1px !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  background-color: rgb(250, 48, 48) !important;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  transform: scale(1.05);
+}
+
+span .new-game-button {
+  margin: 0px !important;
+}
+
+span .new-game-button:hover {
+  margin: 0px !important;
+  background-color: lightgreen !important;
+}
+
+.ant-dropdown {
+  background-color: #f2f2f2 !important;
+  border-radius: 10px;
+}
+
+.ant-dropdown ul {
+  background-color: #f2f2f2 !important;
+}
+
+span .new-game-button {
+  text-align: center !important;
+  height: 35px !important;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: row !important;
+  align-items: center;
+}
+
+/* Overlay */
+.overlay.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Màu nền */
+  z-index: 1000;
+  /* Đảm bảo overlay được đặt trên cùng */
+  display: block;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Màu nền */
+  z-index: 1000;
+  /* Đảm bảo overlay được đặt trên cùng */
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay button {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent !important;
+  /* Màu nền */
+  color: white !important;
+  font-weight: 500;
+  z-index: 1000;
+  /* Đảm bảo overlay được đặt trên cùng */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  margin: 0px;
+}
+
+.your-class-name {
+  position: absolute;
+  z-index: 1 !important;
+  filter: blur(3rem);
+  aspect-ratio: 2 / 1.1;
+  width: 100%;
+  height: fit-content;
+  background-image: linear-gradient(to top right, #004aad, #cb6ce6);
+  opacity: 0.4;
+}
+
+.overlay .timer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent !important;
+  /* Màu nền */
+  color: white !important;
+  font-weight: 500;
+  font-size: 30px !important;
+  z-index: 100000;
+  /* Đảm bảo overlay được đặt trên cùng */
+  display: block;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.overlay button.active {
+  margin: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent !important;
+  /* Màu nền */
+  color: white !important;
+  font-weight: 500;
+  z-index: 1000;
+  /* Đảm bảo overlay được đặt trên cùng */
+  display: block;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* CSS cho màn hình có độ rộng tối đa là 768px */
+  .sudoku-board .ant-row {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  /* CSS cho màn hình có độ rộng tối đa là 576px */
+  .sudoku-board .ant-col input {
+    height: 40px !important;
+    font-size: 18px;
+  }
+}
+
+.sudoku-board .ant-col input {
+  min-width: 30px;
+}
+
+.sudoku-board .ant-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sudoku-board .ant-col {
+  flex: 0 0 10%;
+  /* Cố định chiều rộng của cột */
+}
+
+.sudoku-board .ant-col input {
+  padding: 5px;
+}
+
+.new-game-button {
+  height: 30px;
+}
+
+/* Media queries cho thiết bị di động */
+@media only screen and (max-width: 600px) {
+  .App {
+    width: 100% !important;
+    height: 100% !important;
+    padding-bottom: 100% !important;
+  }
+
+  .sudoku-board {
+    width: 100%;
+  }
+
+  .sudoku-game {
+    padding-bottom: 100%;
+  }
+
+  .sudoku-board .ant-row {
+    width: 100%;
+    /* Đảm bảo các dòng trải dài trên toàn bộ màn hình */
+  }
+
+  .sudoku-board .ant-col {
+    width: 10% !important;
+  }
+
+  .sudoku-board .ant-col input {
+    height: 40px !important;
+    /* Giảm kích thước của ô input */
+    font-size: 16px;
+    /* Giảm kích thước của văn bản */
+  }
+
+  .new-game-button {
+    height: 40px;
+    /* Giảm kích thước của nút */
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .App {
+    width: 100% !important;
+    height: 100% !important;
+    padding-bottom: 100% !important;
+  }
+
+  .sudoku-board {
+    width: 100%;
+  }
+
+  .sudoku-game {
+    padding-bottom: 100%;
+  }
+
+  .sudoku-board .ant-row {
+    width: 100%;
+    /* Đảm bảo các dòng trải dài trên toàn bộ màn hình */
+  }
+
+  .sudoku-board .ant-col {
+    width: 10% !important;
+  }
+
+  .sudoku-board .ant-col input {
+    height: 30px !important;
+    /* Giảm kích thước của ô input */
+    font-size: 12px;
+    /* Giảm kích thước của văn bản */
+  }
+
+  .new-game-button {
+    height: 40px;
+    /* Giảm kích thước của nút */
+  }
+}
